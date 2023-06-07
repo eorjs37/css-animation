@@ -20,7 +20,7 @@
     animation-name: slide;
     /* 애니메이션을 멈추거나 다시 시작할 수 있습니다.*/
     /* animation-play-state: running; */
-    /* 애니메이션 속도의 조절 */
+    /* 애니메이션 중간 중간 속도의 조절 */
     animation-timing-function: ease-out;
 }
 
