@@ -1,0 +1,35 @@
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: aqua;
+    border: 1px solid #000;
+
+}
+
+.left-right {
+    /* 애니메이션을 시작할 시점*/
+    animation-delay: 250ms;
+    /* 애니메이션이 종료되고 다시 정방향으로 할지 역방향으로 할지 설정*/
+    animation-direction: normal;
+    /* 애니메이션이 한 사이클 완료하는데 걸리는 시간 */
+    animation-duration: 3s;
+    /* 애니메이션 반복 횟수 infinite도 가능*/
+    animation-iteration-count: infinite;
+    /* 애니메이션의 중간상태를 지정 */
+    animation-name: slide;
+    /* 애니메이션을 멈추거나 다시 시작할 수 있습니다.*/
+    /* animation-play-state: running; */
+    /* 애니메이션 속도의 조절 */
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide {
+    from {
+        margin: 0;
+    }
+
+    to {
+        margin-left: 250px;
+    }
+}
