@@ -47,3 +47,18 @@ animation-name: slide;
 ```css
 animation-timing-function: ease-out;
 ```
+
+## 웹 브라우저 UI 방식
+
+### 1.Recalculate Style
+> 요소에 적용할 스타일 계산
+### 2.Layout
+> 요소에 레이아웃 생성 및 화면에 배치
+### 3.Paint
+> 생성된 레이아웃에 픽셀 추가
+### 4.Composite Layers
+> 생성한 레이어 계층을 합성
+
+
+### top을 썼을 때와 transform 썼을때 차이
+> top을 사용해서 애니메이션을 구현할 경우 Schedule Style Recalculation,Recalculate Style,Layout 이 반복중이지만, transform을 사용했을 때는 Schedule Style Recalculation,Recalculate Style,Layout 을 반복하지 않는다.
