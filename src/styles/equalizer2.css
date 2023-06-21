@@ -5,61 +5,32 @@
     text-align: center;
 }
 
-
-.everlib-logo {
+.bar {
     display: inline-block;
-    cursor: pointer;
-    background: transparent;
+    width: 50px;
+    height: 150px;
+    background-color: antiquewhite;
+    animation: autoheight 2s linear infinite;
 }
 
-.everlib-logo>.everlib-logo-first-bar,
-.everlib-logo-second-bar,
-.everlib-logo-third-bar,
-.everlib-logo-fourth-bar {
-    display: inline-block;
-    width: 9px;
-    margin-right: 6px;
-    transition: .5s;
-    animation: equalize 4s 0s infinite;
-    vertical-align: top;
-}
-
-.everlib-logo-first-bar {
-    height: 40px;
-    background: #0f87ae;
-    transition: 0.5s;
-    animation-delay: -1.9s;
-}
-
-.everlib-logo-second-bar {
-    height: 48px;
-    background: #b75690;
-    animation-delay: -2.9s;
-}
-
-.everlib-logo-third-bar {
-    height: 44px;
-    background: #86c035;
-    animation-delay: -3.9s;
-}
-
-.everlib-logo-fourth-bar {
-    height: 36px;
-    background: #F0902E;
-    animation-delay: -4.9s;
-}
-
-@keyframes equalize {
+@keyframes autoheight {
     0% {
-        transform: scaleY(1.1);
-    }
-
-    4% {
         transform: scaleY(1);
     }
 
-    100% {
-        transform: scaleY(0.5);
+    25% {
+        transform: scaleY(0.8);
     }
 
+    50% {
+        transform: scaleY(0.6);
+    }
+
+    75% {
+        transform: scaleY(0.8);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
 }
