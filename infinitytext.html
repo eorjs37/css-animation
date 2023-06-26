@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infinitytext</title>
+    <link rel="stylesheet" href="./src/styles/infinitytext.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="scroll_text">
+            <div>
+                <h1 class="title">
+                    <a href="https://dribbble.com/JulianoF">Likedin,</a> <a
+                        href="https://dribbble.com/JulianoF">Dribbble</a> &amp; <a
+                        href="https://dribbble.com/JulianoF">Instagram </a>&nbsp;
+                </h1>
+                <h1 class="title">
+                    <a href="https://dribbble.com/JulianoF">Likedin2,</a> <a
+                        href="https://dribbble.com/JulianoF">Dribbble2</a> &amp; <a
+                        href="https://dribbble.com/JulianoF">Instagram2 </a>&nbsp;
+                </h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        const scrollDiv = document.querySelector('.scroll_text > div');
+        scrollDiv.animate([
+            { transform: "translateX(0%)" },
+            { transform: "translateX(-50%)" },
+        ], {
+            duration: 33000,
+            iterations: Infinity,
+            easing: "linear"
+        }
+        )
+    </script>
+</body>
+
+</html>
