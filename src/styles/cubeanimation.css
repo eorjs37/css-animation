@@ -1,0 +1,45 @@
+.box,
+.box2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid pink;
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.4);
+    background-color: darkgray;
+    /* 요소 기본 색상 */
+    /* 
+        애니메이션 이름, 애니메이션 재생시간 , 애니메이션 진행속도, 애니메이션 시작 지연 시간, 
+        애니메이션 시작방향, 애니메이션 반복횟수 , 애니메이션 시작전,종료 후 스타일 지정, 애니메이션 초기 실행상태 결정
+    */
+
+}
+
+.box {
+    animation: rotate 2s linear forwards, scale 2s linear 3s forwards;
+    /* animation-fill-mode: both; */
+}
+
+.box2:hover {
+    animation: scale2 5s cubic-bezier(0.1, 0.1, 0.1, 1) forwards;
+}
+
+@keyframes rotate {
+
+    to {
+        background-color: lightblue;
+        transform: translate(100px, 100px) rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    to {
+        background-color: black;
+        transform: scale(1.5);
+    }
+}
+
+@keyframes scale2 {
+    to {
+        width: 300px;
+    }
+}
