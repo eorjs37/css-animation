@@ -6,6 +6,7 @@
     border: 1px solid pink;
     box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.4);
     background-color: darkgray;
+    box-sizing: border-box;
     /* 요소 기본 색상 */
     /* 
         애니메이션 이름, 애니메이션 재생시간 , 애니메이션 진행속도, 애니메이션 시작 지연 시간, 
@@ -19,8 +20,9 @@
     /* animation-fill-mode: both; */
 }
 
-.box2:hover {
-    animation: scale2 5s cubic-bezier(0.1, 0.1, 0.1, 1) forwards;
+
+.box2 {
+    animation: scale2 5s cubic-bezier(0.1, 0.1, 0.1, 1) 1s forwards;
 }
 
 @keyframes rotate {
@@ -41,5 +43,12 @@
 @keyframes scale2 {
     to {
         width: 300px;
+    }
+}
+
+@keyframes scale3 {
+    to {
+        width: 50px;
+        height: 50px;
     }
 }
