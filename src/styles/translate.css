@@ -1,0 +1,17 @@
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    border-radius: 8px;
+    animation: translate 1s ease-in-out forwards;
+}
+
+@keyframes translate {
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(90%, 0, 0);
+    }
+}
