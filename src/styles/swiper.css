@@ -1,0 +1,23 @@
+.animation-example {
+    max-width: 1400px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.test {
+    display: inline-block;
+
+    animation: rolling 5s ease-in-out alternate;
+}
+
+@keyframes rolling {
+    0% {
+        transform: translate(0%);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
