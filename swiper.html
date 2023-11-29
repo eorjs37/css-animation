@@ -11,9 +11,34 @@
 
 <body>
     <div class="animation-example">
-        <h1 class="test">Test&nbsp;&nbsp;&nbsp;Test&nbsp;&nbsp;&nbsp;Test&nbsp;&nbsp;&nbsp;Test&nbsp;&nbsp;&nbsp;Test
+        <h1 class="test">I Saw Mommy Kissing Santa Claus&nbsp;&nbsp;&nbsp;I Saw Mommy Kissing
+            Santa Claus&nbsp;&nbsp;&nbsp;I Saw Mommy Kissing Santa Claus&nbsp;&nbsp;&nbsp;I Saw Mommy Kissing Santa
+            Claus&nbsp;&nbsp;&nbsp;I Saw Mommy Kissing Santa Claus
         </h1>
     </div>
+    <script>
+        const animated = document.querySelector('.test');
+        console.log(animated.clientWidth);
+        console.log(animated.scrollWidth);
+        animated.animate([
+            {
+                transform: 'translate(0%)'
+            },
+            {
+                transform: 'translate(-50%)'
+            }
+        ],
+            {
+                duration: animated.scrollWidth * 15,
+                easing: "linear",
+                iterations: Infinity
+            })
+
+        animated.addEventListener("animationend", () => {
+            console.log("animationend");
+
+        })
+    </script>
 </body>
 
 </html>

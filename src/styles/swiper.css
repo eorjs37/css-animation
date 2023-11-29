@@ -1,15 +1,15 @@
 .animation-example {
-    max-width: 1400px;
+    max-width: 100px;
     width: 100%;
     display: block;
     margin: 0 auto;
-
+    overflow: hidden;
 }
 
 .test {
     display: inline-block;
-
-    animation: rolling 5s ease-in-out alternate;
+    text-wrap: nowrap;
+    /* animation: rolling 5s ease-in-out alternate; */
 }
 
 @keyframes rolling {
