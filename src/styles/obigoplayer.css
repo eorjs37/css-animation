@@ -5,6 +5,7 @@
     margin: 0 auto;
     background: url('../../assets/img/img2_original.png') no-repeat;
     background-size: 1780px 720px;
+    display: flex;
 }
 
 .obigo_swiper {
@@ -94,4 +95,14 @@
 .img {
     width: 100%;
     height: 100%;
+}
+
+.obigo_player {
+    margin-left: 81px;
+    width: 1321px;
+    height: 494px;
+    background-color: #FFFFFF29;
+    display: inline-block;
+    margin-top: 62px;
+    border-radius: 32px;
 }
