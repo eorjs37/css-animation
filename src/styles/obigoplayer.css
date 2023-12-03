@@ -1,0 +1,97 @@
+.obigo_container {
+    max-width: 1780px;
+    height: 720px;
+    width: 100%;
+    margin: 0 auto;
+    background: url('../../assets/img/img2_original.png') no-repeat;
+    background-size: 1780px 720px;
+}
+
+.obigo_swiper {
+    width: 239px;
+    height: 536px;
+    margin-top: 43px;
+    position: relative;
+    display: inline-block;
+    margin-left: 48px;
+}
+
+.obigo_swiper_dot {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.obigo_dot_item {
+    width: 10px;
+    height: 10px;
+    background-color: #828282;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.obigo_purpose {
+    margin-left: 29px;
+    position: relative;
+}
+
+
+.obigo_purpose_img_list {
+    display: flex;
+    flex-direction: column;
+    height: 536px;
+}
+
+.obigo_purpose_arrow {
+    position: absolute;
+}
+
+.obigo_purpose_arrow.up {
+    top: 10px;
+    left: 92px;
+}
+
+.obigo_purpose_arrow.down {
+    bottom: 0;
+    left: 92px;
+}
+
+.obigo_purpose_arrow_img {
+    width: 16px;
+    height: 9px;
+}
+
+.obigo_purpose_img_item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.obigo_purpose_img_item.first {
+    margin-top: 72px;
+}
+
+.obigo_purpose_img_item.second,
+.obigo_purpose_img_item.third {
+    margin-top: 30px;
+}
+
+.center {
+    width: 200px;
+    height: 128px;
+    border-radius: 12px;
+    border: 1px solid #FFFFFF
+}
+
+.not_center {
+    width: 159px;
+    height: 101px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
